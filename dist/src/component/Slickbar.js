@@ -11,13 +11,12 @@ class Slickbar extends Component{
             //arrows: this.props.arrows ? this.props.arrows : false,
             //dots: this.props.dots ? this.props.dots : false,
             //lazyLoad: this.props.lazyLoad ? this.props.lazyLoad : true,
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: this.props.slidenum ? this.props.slidenum : 1,
+            slidesToScroll: this.props.slidenum ? this.props.slidenum: 1
         }
-        //console.log(this.props)
         return(
             <div className="weui_panel weui_panel_access">
                 <Slider {...slicksetting}>
@@ -31,14 +30,6 @@ class Slickbar extends Component{
                     })}
                 </Slider>
             </div>
-            //<div className='weui_panel'>
-            //    <Slider {...slicksetting}>
-            //        <img src='http://placekitten.com/g/400/200' />
-            //        <img src='http://placekitten.com/g/400/200' />
-            //        <img src='http://placekitten.com/g/400/200' />
-            //        <img src='http://placekitten.com/g/400/200' />
-            //    </Slider>
-            //</div>
         )
     }
 }
