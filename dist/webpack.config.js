@@ -7,7 +7,9 @@ module.exports = {
     entry: [
         'webpack-hot-middleware/client',
         "./src/entry.js",
-        './static/css/example.less'
+        //'./static/css/example.less',
+        //'./static/js/example.js',
+        //'./static/js/zepto.min.js',
         //{
         //    appentry: "./src/entry.js",
         //    react: ['react']

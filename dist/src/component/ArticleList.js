@@ -12,7 +12,6 @@ class ArticleList extends Component{
     }
 
     render(){
-
         return (
             <div className="weui_panel weui_panel_access">
                 <div className="weui_panel_hd">

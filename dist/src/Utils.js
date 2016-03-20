@@ -18,3 +18,5 @@ export function awaitFetch(url){
         console.log("oops error", e)
     }
 }
+
+export const DOMAIN="//carweb.com"
