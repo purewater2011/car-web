@@ -18,7 +18,7 @@ class App extends Component{
     constructor(){
         super()
         this.state = {
-            nidselected: 5,
+            nidselected: 2,
             isfetch: false
         }
     }
@@ -47,6 +47,9 @@ class App extends Component{
             case 3:
                 return (
                     <div className="weui_tab">
+                        <div className="weui_tab_bd">
+                            <List />
+                        </div>
                         <Navbar nidselected={this.state.nidselected} handleNavbarClick={this.handleNavbarClick.bind(this)} />
                     </div>
                 )
